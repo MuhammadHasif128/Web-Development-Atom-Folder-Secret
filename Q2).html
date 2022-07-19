@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Question 4</title>
+
+          <style>
+                  body{font-family:Verdana;}
+
+                  ul {list-style-type:none}
+          </style>
+
+  <script type="text/javascript">
+
+  function addItem(){
+
+     var item = document.getElementById('color') ;
+     var color = document.getElementById('newItem').value;
+     var unordered_list = document.querySelector("ul");
+     var item_color = item.value;
+
+     var new_checkbox = document.createElement("input");
+
+     new_checkbox.setAttribute("type", "checkbox");
+
+     var new_list = document.createElement("li");
+     new_list.innerText = enter;
+     new_list.style.color = item_color;
+
+     new_list.append(new_checkbox);
+     unordered_list.append(new_list);
+
+     }
+
+  </script>
+  </head>
+  <body>
+
+    <h1>Supermarket To Buy Checklist</h1>
+    <ul>
+
+    </ul>
+
+    <p>Enter Item <input type="text" id="newItem" /> &nbsp
+
+       Category <select name="color" id="color">
+         <option value="black">Medicine</option>
+         <option value="plum">Health & Beauty</option>
+         <option value="blue">Household</option>
+         <option value="green">Electrical, Lifestyle & Pets</option>
+         <option value="red">Fruits & Vegetables</option>
+         <option value="gray">Meat & Seafood</option>
+         </select> <input type="button" value="Add" id="add" />
+        </p>
+    <script type="text/javascript">
+
+        document.getElementById("add").addEventListener("click", addItem);
+
+    </script>
+
+  </body>
+</html>

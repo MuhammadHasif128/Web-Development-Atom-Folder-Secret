@@ -1,0 +1,75 @@
+<!-in between numbers multiplication->
+<script type="text/javascript">
+  var numbers = [5,10,15,20,25,30,35,40,45,50];
+  var num1 = parseInt(prompt("Enter starting number"));
+  var num2 = parseInt(prompt("Enter starting number"));
+
+  total = 1;
+
+
+  for (var i = numbers.indexOf(num1); i <= numbers.indexOf(num2); i++) {
+    document.write(numbers[i]+"<br>");
+    total *= numbers[i];
+  }
+
+  document.write(total);
+</script>
+
+<!average in between numbers->
+<script type="text/javascript">
+
+    var numbers = [5,10,15,20,25,30,35,40,45,50];
+    var num1 = parseInt(prompt("Enter starting number"));
+    var num2 = parseInt(prompt("Enter ending number"));
+
+    total = 0;
+    count = 0
+
+
+    for (var i = numbers.indexOf(num1); i <= numbers.indexOf(num2); i++) {
+      document.write(numbers[i]+"<br>");
+      total += numbers[i];
+      count += 1
+
+  }
+
+    document.write(total/count);
+
+
+</script>
+
+<!-start number end nuber then * the start till end numbers-->
+<script type="text/javascript">
+  var numbers = [5,10,15,20,25,30,35,40,45,50];
+  var num1 = parseInt(prompt("Enter starting number"));
+  var num2 = parseInt(prompt("Enter ending number"));
+
+  total = 1;
+
+
+  for (var i = numbers.indexOf(num1); i <= numbers.indexOf(num2); i++) {
+    document.write(numbers[i]+"<br>");
+    total *= numbers[i];
+  }
+
+  document.write(total);
+</script>
+
+<!-passing mark count no of students->
+<script type="text/javascript">
+  var numbers = [5,10,15,20,25,30,35,40,45,50];
+  var passing_number = parseInt(prompt("enter passing mark"));
+
+
+  count = 0;
+
+
+for (var p in numbers) {
+  if (numbers[p] > passing_number) {
+    count += 1;
+  }
+}
+
+document.write("The number of students who passed is " + count);
+
+</script>

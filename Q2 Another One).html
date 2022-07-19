@@ -1,0 +1,22 @@
+<script type="text/javascript">
+       function addItem(){
+
+
+        var item = document.getElementById('color') ;
+        var enter = document.getElementById('newItem').value;
+        var unordered_list = document.querySelector("ul");
+        var item_color = item.value;
+
+        var new_checkbox = document.createElement("input");
+
+        new_checkbox.setAttribute("type", "checkbox");
+
+        var new_list = document.createElement("li");
+        new_list.innerText = enter;
+        new_list.style.color = item_color;
+
+        new_list.append(new_checkbox);
+        unordered_list.append(new_list);
+
+        }
+</script>
